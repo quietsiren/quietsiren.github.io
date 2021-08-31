@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/assets/images/glyder.ico">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/uikit/uikit.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+ <!-- side navigation bar -->
+ <div class="uk-light" id="sidenav">
+   
+
+
+  <div class="uk-float-right"> <a class="uk-nav-default uk-nav-parent-icon" id="menu-sidenav" href="#sidenav" onclick="toggleSidenav()"><span class="uk-margin-right" style ="stroke-width: 3; width: 25px; height: 25px;"data-feather="chevrons-left">close menu</span></a></div>
+  <div class="bar-wrap">
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav=""><img src="assets\images\img\3d.gif" class='icon' style="opacity: .25" icon"  height="30px" width="150px">
+        <br><li class="uk-nav-header"><br><br>Site map</li>
+      <li>
+        <a href="/"><span class="uk-margin-right" data-feather="home">home</span>Home</a>
+      </li>
+      <li class="uk-parent">
+        <a href="#"><span class="uk-margin-right" data-feather="coffee"></span>About</a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a href="/about"><span class="uk-margin-right" data-feather="code"></span>Skills</a>
+              </li>
+          <li>
+            <a href="/awards"><span class="uk-margin-right" data-feather="award"></span>Achievements</a>
+          </li>
+        </ul>
+      </li>
+      <li class="uk-parent">
+        <a href="#"><span class="uk-margin-right" data-feather="cpu"></span>Projects</a>
+        <ul class="uk-nav-sub">
+          <li>
+            <a href="/projects"><span class="uk-margin-right" data-feather="terminal"></span>Code</a>
+          </li>
+          <li>
+            <a href="/books"><span class="uk-margin-right" data-feather="book-open"></span>Reading</a>
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="/blog"><span class="uk-margin-right" data-feather="twitter"></span>Micro-Blog</a>
+
+      <li class="uk-nav-header">Other links</li>
+      <li>
+        <a href="mailto:athf.flcl@gmail.com" target="_blank"><span class="uk-margin-right" data-feather="mail">mail</span>Email</a>
+      </li>
+      <li>
+        <a href="https://github.com/bishop-exe" target="_blank"><span class="uk-margin-right" data-feather="github">github</span>GitHub</a>
+      </li>
+    </ul>
+    <!-- copyright year -->
+    <div id="copyright" class="uk-section uk-position-relative uk-position-bottom">
+        <div class="uk-clearfix">
+          <div class="uk-float-left">© 2015-2020</div>
+          <div class="uk-float-right"><a href="#copyright-notice" uk-toggle="">Notice</a></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+</div>
+  <body>
+
+    <header>
+        
+        <a href="#!" onclick="toggleSidenav()"><span class="uk-margin-right" data-feather="menu">Menu</span></a>Menu<h1 class="uk-text-center"><span>{{ site.title | default: site.github.repository_name }}<span class="blink_text">_</span></span></h1>
+    </div>
+        
+       
+        
+      
+          
+        
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+        
+      </section>
+    </div>
+    
+    <div id="copyright-notice" class="uk-modal-container uk-modal" uk-modal="" style="backdrop-filter: blur(8px);">
+      <div class=" uk-modal-body">
+      <h4 class="uk-modal-close"><span class="uk-margin-right" data-feather="x">close</span></h4>
+        <h2 class="uk-modal-title">Notice</h2>
+        <p><br>
+        All opinions are my own and do not represent any entity other than myself.  
+        All images come with a CC0 license, this means that you can:
+        
+        <li> Use, copy, edit, or share that photo.
+          <li>Use it for personal or commercial purposes.
+            <li> And to do so without purchase, permission, or giving attribution to the creator of the work. While we do always encourage attribution, it is not required.        
+                <li>You agree never to advertise the photograph(s) as your own work or portray yourself as the author of said work.
+                  <p>Images used can be found at <a href="https://picography.co/" target="_blank">picography.co</a></p>
+        All code found on this website is subject to the terms under which it is licensed. See each project for more specific details.</p>
+        <p>Built using open-source software. This page is rendered using  <a href="https://jekyllrb.com/" target="_blank">Jykell</a>, <a href="https://getuikit.com" target="_blank">UI Kit</a> and <a href="https://feathericons.com" target="_blank">Feather Icons</a>, and is readily served by <a href="https://pages.github.com/" target="_blank">GitHubPages</a>.</p>
+
+        </div>
+    
+  </body>
+  <script src="/js/uk/uikit.min.js"></script>
+  <script src="/js/feather-icons/feather.min.js"></script>
+  <script src="/js/index.js"></script>
+</html>
